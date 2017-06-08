@@ -31,3 +31,5 @@ RUN apt-get -y install build-essential \
 	    tclsh
 
 ADD uname /usr/local/bin
+ADD dmake /usr/local/bin
+ENTRYPOINT ["dmake"]
