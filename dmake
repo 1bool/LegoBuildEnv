@@ -1,6 +1,0 @@
-#!/bin/sh
-
-if [ -n "$UID" ] && [ -n "$USERNAME" ]; then
-	useradd -u $UID $USERNAME
-fi
-make $@

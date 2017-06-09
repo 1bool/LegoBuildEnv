@@ -28,8 +28,9 @@ RUN apt-get -y install build-essential \
 	    cmake \
 	    rsync \
 	    bc \
-	    tclsh
+	    tclsh \
+	    zip
 
 ADD uname /usr/local/bin
-ADD dmake /usr/local/bin
-ENTRYPOINT ["dmake"]
+ADD dexec /usr/local/bin
+ENTRYPOINT ["/usr/local/bin/dexec"]
