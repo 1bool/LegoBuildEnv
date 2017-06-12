@@ -1,5 +1,8 @@
 #!/bin/sh
 
+if [ -n "$GROUPID" ] && [ -n "$GROUPNAME" ]; then
+	groupadd -f -g $GROUPID $GROUPNAME
+fi
 if [ -n "$USERID" ] && [ -n "$USERNAME" ]; then
 	useradd -u $USERID $USERNAME
 fi

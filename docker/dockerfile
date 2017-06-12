@@ -29,8 +29,10 @@ RUN apt-get -y install build-essential \
 	    rsync \
 	    bc \
 	    tclsh \
-	    zip
+	    zip \
+	    fakeroot
 
 ADD uname /usr/local/bin
 ADD dexec /usr/local/bin
+ADD p4 /usr/local/bin
 ENTRYPOINT ["/usr/local/bin/dexec"]
