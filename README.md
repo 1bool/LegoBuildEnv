@@ -42,6 +42,8 @@ logout and login
 USAGE
 ====
 
+Just replace original make command with legomake
+
 ```bash
 cd ${PROJECT_DIRECTORY}
 legomake menuconfig
