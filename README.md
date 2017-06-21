@@ -1,7 +1,7 @@
 PRE-INSTALL
 ====
 
-Make sure you have previously run `p4v` and have downloaded some code, so you have `.p4*` files in your `$HOME` directory
+Make sure you have previously run `p4v` and have downloaded some code, so that you have `.p4*` files in your `$HOME` directory
 
 Install Docker
 ----
