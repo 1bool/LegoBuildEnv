@@ -5,6 +5,7 @@ Install Docker
 ----
 ```bash
 sudo apt-get install docker.io
+sudo usermod -aG docker $USER
 ```
 logout and login
 
