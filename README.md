@@ -7,7 +7,7 @@ Install Docker
 sudo apt-get install docker.io
 sudo usermod -aG docker $USER
 ```
-logout and login
+Logout and login to get `usermod` take effect
 
 INSTALL
 ====
@@ -38,7 +38,7 @@ alias 14u32='docker run --privileged -it \
 alias legomake='14u32 make'
 EOF
 ```
-logout and login
+Logout and login to have the `.bash_aliases` take effect
 
 USAGE
 ====
