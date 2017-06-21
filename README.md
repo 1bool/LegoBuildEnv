@@ -23,6 +23,8 @@ docker pull w1ball/lego_build_env
 Make the legomake aliases
 ----
 
+Copy and paste following code to terminal
+
 ```bash
 cat <<- 'EOF' >> ~/.bash_aliases
 mkdir -p /tmp/legomake
