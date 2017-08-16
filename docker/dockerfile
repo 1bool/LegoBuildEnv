@@ -33,7 +33,8 @@ RUN apt-get -y install build-essential \
 	    fakeroot \
 	    dos2unix \
 	    git \
-	    sudo
+	    sudo \
+	    libelf1
 
 ADD uname /usr/local/bin
 ADD dexec /usr/local/bin
