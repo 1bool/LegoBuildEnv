@@ -1,7 +1,7 @@
 FROM m0elnx/ubuntu-32bit
 MAINTAINER Wenbo Wang <wenbo.wang@belkin.com>
 
-RUN sed -i 's|http://archive|http://cn.archive|' /etc/apt/sources.list
+RUN sed -i 's|http://archive.ubuntu.com|http://mirrors.yun-idc.com|' /etc/apt/sources.list
 RUN apt-get -y update
 RUN apt-get -y upgrade
 RUN apt-get -y install build-essential \
@@ -34,7 +34,9 @@ RUN apt-get -y install build-essential \
 	    dos2unix \
 	    git \
 	    sudo \
-	    libelf1
+	    libelf1 \
+	    help2man \
+	    autopoint
 
 ADD uname /usr/local/bin
 ADD dexec /usr/local/bin

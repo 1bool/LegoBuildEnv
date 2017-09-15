@@ -5,6 +5,7 @@ alias 14u32='docker run --privileged -it \
 	-e USERID=$(id -u) \
 	-e USERNAME=$(id -un) \
 	-e HOME=${HOME} \
+	-e P4CONFIG=.p4config \
 	-h $(hostname) \
 	-v ${LEGOTMP}:${HOME}/ \
 	-v $PWD/..:$(echo $PWD/..) \
