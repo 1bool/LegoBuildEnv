@@ -36,7 +36,8 @@ RUN apt-get -y install build-essential \
 	    sudo \
 	    libelf1 \
 	    help2man \
-	    autopoint
+	    autopoint \
+	    android-tools-fsutils
 
 ADD uname /usr/local/bin
 ADD dexec /usr/local/bin
