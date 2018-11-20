@@ -37,8 +37,12 @@ RUN apt-get -y install build-essential \
 	    libelf1 \
 	    help2man \
 	    autopoint \
-	    android-tools-fsutils
+	    android-tools-fsutils \
+		chrpath \
+		diffstat
 
+ADD http://commondatastorage.googleapis.com/git-repo-downloads/repo /usr/local/bin/repo
+RUN chmod 755 /usr/local/bin/repo
 ADD uname /usr/local/bin
 ADD dexec /usr/local/bin
 ADD p4 /usr/local/bin
