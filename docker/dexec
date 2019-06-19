@@ -6,4 +6,4 @@ fi
 if [ -n "$USERID" ] && [ -n "$USERNAME" ]; then
 	useradd -u $USERID $USERNAME
 fi
-sudo -E -u $USERNAME $@ || $@
+sudo -E -u $USERNAME $@
