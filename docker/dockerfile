@@ -39,7 +39,11 @@ RUN apt-get -y install build-essential \
 	    autopoint \
 	    android-tools-fsutils \
 		chrpath \
-		diffstat
+		diffstat \
+		uuid-dev \
+		zlib1g-dev \
+		liblzo2-dev \
+		bsdmainutils
 
 ADD http://commondatastorage.googleapis.com/git-repo-downloads/repo /usr/local/bin/repo
 RUN chmod 755 /usr/local/bin/repo
