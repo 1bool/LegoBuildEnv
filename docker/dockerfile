@@ -1,7 +1,7 @@
 FROM m0elnx/ubuntu-32bit
 MAINTAINER Wenbo Wang <wenbo.wang@belkin.com>
 
-RUN sed -i 's|http://archive.ubuntu.com|http://mirrors.yun-idc.com|' /etc/apt/sources.list
+RUN sed -i 's|http://archive.ubuntu.com|http://mirrors.aliyun.com|' /etc/apt/sources.list
 RUN apt-get -y update
 RUN apt-get -y upgrade
 RUN apt-get -y install build-essential \
@@ -43,7 +43,8 @@ RUN apt-get -y install build-essential \
 		uuid-dev \
 		zlib1g-dev \
 		liblzo2-dev \
-		bsdmainutils
+		bsdmainutils \
+		yui-compressor
 
 ADD http://commondatastorage.googleapis.com/git-repo-downloads/repo /usr/local/bin/repo
 RUN chmod 755 /usr/local/bin/repo
